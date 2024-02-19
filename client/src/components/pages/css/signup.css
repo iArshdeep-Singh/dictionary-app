@@ -1,0 +1,270 @@
+#container {
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: white;
+}
+
+/* dictionary container */
+#dictionary-container {
+    width: 55%;
+    align-self: center;
+    position: relative;
+    left: 2vw;
+    font-size: 8vw;
+    font-family: serif;
+    color: dimgray;
+    text-shadow: 0.4vw 0.4vw 3px;
+}
+
+
+/* sign up container */
+#signup-container {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+}
+
+#signup-container>h1 {
+    position: relative;
+    top: 10vh;
+    font-size: 3.8vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#signup-container>h3 {
+    position: relative;
+    top: 20vh;
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* buttons and inputs */
+#signup-container>input {
+    position: relative;
+    top: 22vh;
+}
+
+#signup-container>input {
+    margin-bottom: 2vh;
+    height: 4.5vh;
+    width: 22vw;
+    padding: 0 2vw;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1.15vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signup-container>input:focus {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+/* buttons */
+#create-account {
+    position: relative;
+    top: 22vh;
+    height: 5vh;
+    width: 22vw;
+    border: none;
+    border-radius: 15px;
+    background-color: royalblue;
+    color: white;
+    font-size: 1.12vw;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#signup-container>p {
+    position: relative;
+    top: 26.5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+}
+
+#sign-in {
+    position: relative;
+    top: 28vh;
+    height: 5vh;
+    width: 22vw;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    color: royalblue;
+    font-size: 1.12vw;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#create-account:hover {
+    opacity: 0.9;
+}
+
+#sign-in:hover {
+    background-color: lightcyan;
+}
+
+#create-account:active {
+    color: black;
+    background-color: gray;
+}
+
+#sign-in:active {
+    color: black;
+    background-color: gray;
+}
+
+
+/* For Tablets */
+@media (max-width: 768px) {
+    #container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* dictionary container */
+    #dictionary-container {
+        padding-top: 1vh;
+        padding-left: 12vw;
+        background-color: white;
+        height: 30vh;
+        width: 100vw;
+        position: relative;
+        left: 0;
+        font-size: 9vh;
+    }
+
+    /* signup container */
+    #signup-container {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    #signup-container>h1 {
+        position: relative;
+        top: -7vh;
+        font-size: 5vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #signup-container>h3 {
+        position: relative;
+        top: -3vh;
+        font-size: 3.5vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #signup-container>input {
+        position: relative;
+        top: -1vh;
+    }
+
+    #signup-container>input {
+        margin-bottom: 2vh;
+        height: 4.5vh;
+        width: 50vw;
+        padding: 0 2vw;
+        border: 1px solid gray;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* buttons */
+    #create-account {
+        position: relative;
+        top: -1vh;
+        height: 4.5vh;
+        width: 50vw;
+        border: none;
+        border-radius: 15px;
+        background-color: royalblue;
+        color: white;
+        font-size: 2.2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    #signup-container>p {
+        margin-top: 2vh;
+        position: relative;
+        top: -0.01vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;
+    }
+
+    #sign-in {
+        margin-top: 2vh;
+        margin-bottom: -2vh;
+        position: relative;
+        top: -1vh;
+        height: 4.5vh;
+        width: 50vw;
+        border: 1px solid gray;
+        border-radius: 15px;
+        background-color: white;
+        color: royalblue;
+        font-size: 2.1vh;
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+}
+
+/* for Mobile Phones */
+@media (max-width: 480px) {
+    #signup-container>input {
+        margin-bottom: 2vh;
+        height: 5vh;
+        width: 60vw;
+        font-size: 2.2vh;
+    }
+
+    #signup-container>h1 {
+        position: relative;
+        top: -7vh;
+        font-size: 4.5vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* buttons */
+    #create-account {
+        height: 5vh;
+        width: 60vw;
+        font-size: 2.2vh;
+    }
+
+    #signup-container>p {
+        margin-top: 2vh;
+        position: relative;
+        top: -0.01vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.1vh;
+    }
+
+    #sign-in {
+        height: 5vh;
+        width: 60vw;
+        font-size: 2.2vh;
+    }
+
+}

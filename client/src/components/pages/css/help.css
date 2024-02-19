@@ -1,0 +1,14 @@
+#help {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    font-size: 6vw;
+    color: seagreen;
+    /* background-color: slateblue; */
+}
+
+@media(max-width: 768px) {
+    #help{
+        font-size: 6vh;
+    }
+}

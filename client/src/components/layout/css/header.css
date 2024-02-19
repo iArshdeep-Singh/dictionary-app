@@ -1,0 +1,78 @@
+#header {
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header>h1>a {
+    position: relative;
+    left: 2vw;
+    bottom: 1vh;
+    color: white;
+    font-size: 3.5vw;
+    text-decoration: none;
+}
+
+
+#header>a>button {
+    height: 4.5vh;
+    width: 7.5vw;
+    position: relative;
+    right: 2vw;
+    border: none;
+    font-size: 1.25vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#header>a>button:hover {
+    opacity: 0.9;
+}
+
+#header>a>button:active {
+    transform: translateY(0.0625rem);
+    background-color: lightgrey;
+    color: black;
+}
+
+/* for tablets */
+@media (max-width:768px) {
+    #header>h1>a {
+        position: relative;
+        left: 4vw;
+        bottom: 0.5vh;
+        color: white;
+        font-size: 4vh;
+    }
+
+    #header>a>button {
+        height: 4.5vh;
+        width: 15vw;
+        position: relative;
+        right: 4vw;
+        border: none;
+        font-size: 1.75vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+}
+
+/* for mobile phones */
+@media (max-width: 480px) {
+    #header>h1>a {
+        left: 5vw;
+        font-size: 4.25vh;
+    }
+
+    #header>a>button {
+        height: 5vh;
+        width: 17.5vw;
+        font-size: 2vh;
+    }
+}

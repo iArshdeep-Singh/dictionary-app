@@ -1,0 +1,223 @@
+#search-box {
+    position: relative;
+    top: 2vh;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* background-color: rgb(100, 0, 100); */
+    /* border: 2px solid black; */
+}
+
+#search-props {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1vw;
+    height: 10vh;
+    width: 100vw;
+    /* background-color: tomato; */
+}
+
+#search-props>input {
+    height: 5vh;
+    width: 25vw;
+    font-size: 1.2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 1vw;
+    outline: none;
+}
+
+#search-props>button {
+    height: 5vh;
+    width: 5vw;
+    font-size: 1vw;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+#search-props>button:active {
+    color: white;
+    background: grey;
+}
+
+/* words */
+#words {
+    height: 70vh;
+    width: 99vw;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+}
+
+#words>pre {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 0 3vw;
+    font-size: 1.5vw;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#words>i {
+    margin-left: 3vw;
+    padding: 0.2vh 1.5vw;
+    font-size: 1.4vw;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+    color: black;
+    border-radius: 15px;
+}
+
+#words>p {
+    margin-top: 1.5vh;
+    padding: 0 3vw;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+}
+
+#words>b {
+    padding-left: 3vw;
+    font-size: 10vw;
+    color: steelblue;
+}
+
+/* suggestions */
+#suggestions {
+    margin: 10vh 2vw 2vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    list-style: none;
+}
+
+#suggestions>li {
+    padding: 10px 10px;
+    font-size: 25px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: blueviolet;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#did {
+    width: 100vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-align: center;
+    position: fixed;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+
+/* for Tablets */
+@media(max-width: 768px) {
+    #enter-here {
+        font-size: 3vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    #search-props>input {
+        height: 5vh;
+        width: 40vw;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-indent: 1vw;
+    }
+
+    #search-props>button {
+        height: 5vh;
+        width: 15vw;
+        font-size: 2.1vh;
+        font-weight: 550;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid black;
+    }
+
+    /* words */
+    #words>pre {
+        font-size: 4.5vw;
+    }
+
+    #words>i {
+        font-size: 4vw;
+    }
+
+    #words>p {
+        font-size: 5vw;
+    }
+
+    /* suggestions */
+    #suggestions {
+        gap: 3vw;
+    }
+
+    #suggestions>li {
+        font-size: 30px;
+        border: 1px solid grey;
+    }
+
+    #did {
+        padding-top: 1.5vh;
+        font-size: 4.5vw;
+    }
+
+}
+
+
+/* for mobile phones */
+@media(max-width: 480px) {
+    #search-props>input {
+        height: 6vh;
+        width: 50vw;
+        font-size: 2.5vh;
+        text-indent: 1vw;
+    }
+
+    #search-props>button {
+        height: 6vh;
+        width: 20vw;
+        font-size: 2.3vh;
+    }
+
+    /* words */
+    #words>pre {
+        font-size: 4vw;
+    }
+
+    #words>i {
+        font-size: 3.9vw;
+    }
+
+    #words>p {
+        font-size: 4.75vw;
+    }
+
+    /* suggestions */
+    #suggestions {
+        gap: 3vw;
+    }
+
+    #suggestions>li {
+        font-size: 20px;
+        font-weight: 550;
+    }
+
+    #did {
+        padding-top: 1.5vh;
+        font-size: 6vw;
+    }
+}

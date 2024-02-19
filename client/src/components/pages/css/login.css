@@ -1,0 +1,185 @@
+#container-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#sign {
+    position: relative;
+    top: 8vh;
+    font-size: 4vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: dimgray;
+}
+
+
+#signin-box {
+    position: relative;
+    top: 10vh;
+    padding: 4vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    border: 1px solid dimgray;
+    border-radius: 15px;
+}
+
+#signin-box>input {
+    margin-bottom: 2vh;
+    height: 4.5vh;
+    width: 22vw;
+    padding: 0 2vw;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1.15vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signin-box>input:focus {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* buttons */
+#signin-box>button {
+    height: 5vh;
+    width: 22vw;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.19vw;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#sign-in-button {
+    background-color: royalblue;
+    color: white;
+}
+
+#sign-in-button:active {
+    background-color: gray;
+    color: black;
+}
+
+#dont {
+    position: relative;
+    top: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+}
+
+#create-account-button {
+    position: relative;
+    top: 2vh;
+    height: 5vh;
+    width: 22vw;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    color: royalblue;
+    font-size: 1.12vw;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#create-account-button:active {
+    background-color: gray;
+    color: black;
+}
+
+/* for Tablets */
+@media(max-width: 768px) {
+    #sign {
+        position: relative;
+        top: 12vh;
+        font-size: 6vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: dimgray;
+    }
+
+    #signin-box {
+        position: relative;
+        top: 14vh;
+        padding: 4vh 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vh;
+        border: 1px solid dimgray;
+        border-radius: 15px;
+    }
+
+    #signin-box>input {
+        margin-bottom: 2vh;
+        height: 4.5vh;
+        width: 50vw;
+        padding: 0 2vw;
+        border: 1px solid gray;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #signin-box>button {
+        height: 4.5vh;
+        width: 50vw;
+        border: none;
+        border-radius: 15px;
+        font-size: 2.2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    #create-account-button {
+        height: 4.5vh;
+        width: 50vw;
+        font-size: 2.2vh;
+        font-weight: 550;
+    }
+
+    #dont {
+        position: relative;
+        top: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;
+    }
+}
+
+/* for mobile phones */
+@media (max-width: 480px) {
+    #signin-box {
+        padding: 4.5vh 3vw;
+    }
+
+    #signin-box>input {
+        height: 5vh;
+        width: 60vw;
+        border-radius: 10px;
+        font-size: 2.2vh;
+    }
+
+    #signin-box>button {
+        height: 5vh;
+        width: 60vw;
+        font-size: 2.2vh;
+    }
+
+    #create-account-button {
+        height: 5vh;
+        width: 60vw;
+        font-size: 2.2vh;
+    }
+
+    #dont {
+        font-size: 2.1vh;
+    }
+}

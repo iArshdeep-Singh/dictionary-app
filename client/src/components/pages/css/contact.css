@@ -1,0 +1,93 @@
+#contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* image */
+#contact-photo {
+    position: relative;
+    top: 5vh;
+    /* background-color: crimson; */
+    height: 100%;
+    width: 50vw;
+}
+
+#contact-photo>img {
+    padding-left: 4vw;
+    max-width: 100%;
+    height: auto;
+}
+
+/* contact */
+#contact {
+    /* background-color: goldenrod; */
+    height: 100%;
+    width: 50vw;
+}
+
+#contact>h1 {
+    position: relative;
+    bottom: 2vh;
+    padding-left: 2vw;
+    font-size: 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact>p {
+    padding-left: 2vw;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    line-height: 4.75vh;
+}
+
+#contact>p>span{
+    color: royalblue;
+}
+
+/* for Tablets */
+@media(max-width: 768px) {
+    #contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    /* image */
+    #contact-photo {
+        position: relative;
+        top: 8vh;
+        /* background-color: crimson; */
+        height: 50vh;
+        width: 100vw;
+    }
+
+    #contact-photo>img {
+        padding-left: 12.5vw;
+        max-width: auto;
+        height: 100%;
+    }
+
+
+    #contact {
+        position: relative;
+        top: 5vh;
+        height: 100%;
+        width: 85vw;
+    }
+
+    #contact>h1 {
+        padding-left: 0vw;
+        margin-bottom: 1vh;
+        font-size: 5vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #contact>p {
+        padding-left: 0vw;
+        font-size: 2.4vh;
+        font-family: sans-serif;
+    }
+}
